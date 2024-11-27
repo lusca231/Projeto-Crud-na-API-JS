@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Projeto CRUD na API - CRUD</title>
+        <script src="js/crud.js" defer type="module"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+
+    <body>
+
+        <!--Sessão responsável pelo Menu-->
+        <section>
+            <header id="topo">
+                <nav id="menu">
+                    <ul>
+                        <li> <a href="#topo">Home</a> </li>
+                        <li> <a href="#caixa_inf">Cadastro</a> </li>
+                        <li> <a href="#listFilmes">Filmes</a> </li>
+                        <li> <a href="#footer">Contatos</a> </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div>
+                <h1 class="titulo">Sistema de Cadastro para Filmes</h1>
+            </div>
+        </section>
+
+        <!--Sessão responsável pelo formulario e botões "Salvar" e "Limpar"-->
+        <section>
+            <div id="caixa_inf">
+                <h1> Cadastre seu Filme</h1>
+
+                <form id="formulario">
+                    <label>Nome</label>
+                    <input type="text" name="txt_nome" id="nome" placeholder=" Nome do filme"><br>
+
+                    <label>Sinopse</label>
+                    <textarea id="sinopse" placeholder=" Fale um pouco sobre o filme"></textarea><br>
+
+                    <label>Poster</label>
+                    <input type="text" name="txt_image" id="image" placeholder=" Link para o poster do filme"><br>
+
+                    <label>Valor</label>
+                    <input type="text" name="text_valor" id="valor" placeholder=" Valor do ingresso"><br>
+
+                    <div id="salvar">Salvar</div>
+                    <div id="limpar">Limpar</div>
+                </form>
+            </div>
+        </section>
+
+        <!--Div de criação da lista-->
+        <div id="listFilmes">
+            <h1> Listagem de Filmes </h1>
+            <div class="linha">
+                <div class="lista">Nome</div>
+                <div class="lista">Sinopse</div>
+                <div class="lista">Preço</div>
+                <div class="lista">Opções</div>
+            </div>
+
+            <div id="listDados">
+            </div>
+        </div>
+
+        <!--Rodapé-->
+        <footer id="footer">
+            <span>
+                Desenvolvido por:<br>
+                Lucas Loiola Bezerra - RA: 61818 <br>
+                Rafael Andrade da Silva - RA: 52733<br>
+                ADS.4NB
+            </span>
+        </footer>
+
+    </body>
+
+</html>
